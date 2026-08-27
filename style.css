@@ -1,0 +1,49 @@
+:root{
+  --bg:#0f1724;
+  --canvas-bg:#0b1220;
+  --snake:#3ecf8e;
+  --food:#ff3860;
+  --text:#e6eef8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#071227 0%, #0b2030 100%);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  padding:32px;
+}
+h1{font-size:20px}
+.game-wrap{
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+canvas{
+  background:var(--canvas-bg);
+  border:4px solid rgba(255,255,255,0.04);
+  border-radius:8px;
+  image-rendering:pixelated;
+}
+.controls{
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:flex-start;
+}
+.buttons button{
+  background:transparent;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:8px 12px;
+  margin-right:6px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.buttons button:hover{background:rgba(255,255,255,0.02)}
+.hint{opacity:0.8;margin-top:8px;font-size:13px}
